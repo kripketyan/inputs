@@ -1,0 +1,532 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Input</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <div class="big_wrapper">
+      <div class="wrapper">
+        <div class="input_1">
+          <img
+            class="img_user"
+            src="./assets/svg/person_outline_black_24dp.svg"
+            alt="иконка пользователя"
+          />
+          <h1 class="title">Sign in</h1>
+          <form class="form">
+            <label class="label" for="username">Username</label>
+            <input class="input" type="text" id="username" name="username" />
+            <div class="circle"></div>
+            <label class="label" for="password">Password</label>
+            <input
+              class="input"
+              type="password"
+              name="password"
+              id="password"
+            />
+            <img
+              class="img_eye"
+              src="./assets/svg/visibility_off_black_24dp.svg"
+              alt="иконка с закрытм глазом"
+            />
+            <input class="submit" type="submit" value="Sign in" />
+          </form>
+        </div>
+        <div class="input_11">
+          <span class="input_11-title">How likely are you recommend this?</span>
+          <form class="form_input_11">
+            <label class="label_radio_11">
+              <input
+                type="radio"
+                class="input_radio_11"
+                name="color"
+                value="yes"
+                checked
+              />
+              <span>😕</span>
+            </label>
+            <label class="label_radio_11">
+              <input
+                type="radio"
+                class="input_radio_11"
+                name="color"
+                value="yes"
+                checked
+              />
+              <span>😐</span>
+            </label>
+            <label class="label_radio_11">
+              <input
+                type="radio"
+                class="input_radio_11"
+                name="color"
+                value="yes"
+                checked
+              />
+              <span>🙂</span>
+            </label>
+            <label class="label_radio_11">
+              <input
+                type="radio"
+                class="input_radio_11"
+                name="color"
+                value="yes"
+                checked
+              />
+              <span>😀</span>
+            </label>
+            <label class="label_radio_11">
+              <input
+                type="radio"
+                class="input_radio_11"
+                name="color"
+                value="yes"
+                checked
+              />
+              <span>😍</span>
+            </label>
+          </form>
+        </div>
+        <div class="input_range">
+          <img
+            class="img_range"
+            src="./assets/jpg/palma.jpg"
+            alt="на картинке пальма"
+          />
+          <!-- <span class="range_title">Volume</span> -->
+          <form class="form_range">
+            <label class="range_title" for="vol">Volume</label>
+            <input
+              type="range"
+              id="vol"
+              name="vol"
+              value="0 "
+              min="0"
+              max="50"
+              step="1"
+            />
+          </form>
+        </div>
+        <div class="input_range">
+          <div class="container_upload">
+            <span class="text_upload">Upload in progress...</span>
+            <input class="input_upload" type="file" id="file" />
+            <label class="button_upload" for="file">
+              <span class="circle_upload circle_upload--first"></span>
+              <span class="circle_upload circle_upload--second"></span>
+              <span class="circle_upload circle_upload--third"></span>
+            </label>
+          </div>
+        </div>
+      </div>
+      <div class="wrapper">
+        <div class="input_2">
+          <form class="form">
+            <label class="label" for="email">Email</label>
+            <span class="star">*</span>
+            <input
+              class="input"
+              type="email"
+              id="email"
+              name="email"
+              placeholder="email@gmail.com"
+            />
+            <div class="container">
+              <div>
+                <label class="label" for="message">Message</label>
+                <span class="star">*</span>
+              </div>
+              <span class="small_text">Keep it short and simple</span>
+            </div>
+            <textarea
+              class="textarea"
+              name="message"
+              rows="10"
+              cols="30"
+              placeholder="Name"
+            ></textarea>
+            <!-- <input class="input" type="text" name="text" id="text" /> -->
+            <input class="submit_2" type="submit" value="Send" />
+            <img
+              class="send"
+              src="./assets/svg/send_black_24dp.svg"
+              alt="иконка отправки"
+            />
+          </form>
+        </div>
+        <div class="input_4">
+          <form class="form_4">
+            <label class="label" for="email">Email</label>
+            <input
+              type="email"
+              name="email"
+              id="email"
+              placeholder="email@gmail.com"
+            />
+            <input
+              type="checkbox"
+              class="custom-checkbox"
+              id="allow"
+              name="allow"
+              value="yes"
+            />
+            <label class="label_2" for="allow"
+              >Allow me to create real prototypes</label
+            >
+          </form>
+        </div>
+        <div class="input_3">
+          <form>
+            <label class="label" for="pin">Pin</label>
+            <div class="wrapper_pass">
+              <input
+                class="pass2"
+                type="password"
+                minlength="1"
+                maxlength="1"
+                size="1"
+              />
+              <input
+                class="pass2"
+                type="password"
+                minlength="1"
+                maxlength="1"
+                size="1"
+              />
+              <input
+                class="pass2"
+                type="password"
+                minlength="1"
+                maxlength="1"
+                size="1"
+              />
+              <input
+                class="pass2"
+                type="password"
+                minlength="1"
+                maxlength="1"
+                size="1"
+              />
+            </div>
+          </form>
+        </div>
+      </div>
+      <div class="wrapper">
+        <div class="input_3">
+          <form class="form2">
+            <label class="label" for="birthday">Your birthday</label>
+            <div class="container">
+              <div class="container_birthday">
+                <select
+                  class="select_birthday select_birthday-first"
+                  name="birthday"
+                >
+                  <option value="1">01</option>
+                  <option value="2">02</option>
+                  <option value="3">03</option>
+                  <option value="4">04</option>
+                  <option value="5">05</option>
+                  <option value="6">06</option>
+                  <option value="7">07</option>
+                  <option value="8">08</option>
+                  <option value="9">09</option>
+                  <option value="10">10</option>
+                </select>
+              </div>
+              <div class="container_birthday_2">
+                <select
+                  class="select_birthday select_birthday-second"
+                  name="birthday"
+                >
+                  <option value="1">Jan</option>
+                  <option value="2">Feb</option>
+                  <option value="3">Mar</option>
+                  <option value="4">Apr</option>
+                  <option value="5">May</option>
+                  <option value="6">Jun</option>
+                  <option value="7">Jul</option>
+                  <option value="8">Aug</option>
+                  <option value="9">Sep</option>
+                  <option value="10">Oct</option>
+                  <option value="10">Nov</option>
+                  <option value="10">Dec</option>
+                </select>
+              </div>
+              <div class="container_birthday_3">
+                <select
+                  class="select_birthday select_birthday-third"
+                  name="birthday"
+                >
+                  <option value="1">1980</option>
+                  <option value="2">1981</option>
+                  <option value="3">1982</option>
+                  <option value="4">1983</option>
+                  <option value="5">1984</option>
+                  <option value="6">1985</option>
+                  <option value="7">1986</option>
+                  <option value="8">1987</option>
+                  <option value="9">1988</option>
+                  <option value="10">1989</option>
+                  <option value="10">1990</option>
+                </select>
+              </div>
+            </div>
+          </form>
+        </div>
+        <div class="input_1 input_1-another">
+          <img
+            class="img_face"
+            src="./assets/jpg/depositphotos_74950191-stock-photo-men-latin-american-and-hispanic.jpg"
+            alt="аватарка"
+          />
+          <div class="circle_blue"></div>
+          <form class="form1">
+            <label class="label" for="country">Country</label>
+            <div class="select_country">
+              <select class="select1" name="country">
+                <option value="1">&#129409; France</option>
+                <option value="2">&#8986; China</option>
+                <option value="3">&#9748; Germany</option>
+                <option value="4">&#129409; Great Britain</option>
+                <option value="5">&#8986; Italy</option>
+                <option value="6">&#9748; Russia</option>
+              </select>
+            </div>
+            <label class="label" for="phone">Phone</label>
+            <div class="select_phone">
+              <select class="select2" name="phone">
+                <option value="1">+31</option>
+                <option value="2">+32</option>
+                <option value="3">+33</option>
+                <option value="4">+34</option>
+                <option value="5">+35</option>
+                <option value="6">+36</option>
+              </select>
+              <input
+                class="input_phone"
+                type="phone"
+                name="phone"
+                id="phone"
+                placeholder="62345676"
+              />
+            </div>
+            <input class="submit_3" type="submit" value="Update" />
+            <input class="submit_3" type="submit" value="Cancel" />
+          </form>
+        </div>
+        <div class="input_radio">
+          <form class="form_radio">
+            <label class="label_radio">
+              <input
+                type="radio"
+                class="input_radio"
+                name="color"
+                value="yes"
+                checked
+              />
+              <span>Real</span>
+            </label>
+            <label class="label_radio">
+              <input type="radio" class="input_radio" name="color" value="no" />
+              <span>Static</span>
+            </label>
+          </form>
+        </div>
+        <div class="input_range input_range-search">
+          <form class="form_search">
+            <div class="search">
+              <input class="input_search" type="text" placeholder="Search" />
+            </div>
+            <button class="button_search">
+              <img src="./assets/svg/search.svg" alt="иконка поиска" />
+            </button>
+          </form>
+        </div>
+      </div>
+      <div class="wrapper">
+        <div class="input_6">
+          <form class="form_5">
+            <div class="test">
+              <label class="label_5">
+                <input
+                  type="checkbox"
+                  class="custom-checkbox3"
+                  name="rock"
+                  value="yes"
+                />
+                <span class="label_4">Rock</span>
+              </label>
+              <label class="label_5">
+                <input
+                  type="checkbox"
+                  class="custom-checkbox3"
+                  name="rock"
+                  value="yes"
+                />
+                <span class="label_4">Jazz</span>
+              </label>
+              <label class="label_5">
+                <input
+                  type="checkbox"
+                  class="custom-checkbox3"
+                  name="rock"
+                  value="yes"
+                />
+                <span class="label_4">Soul</span>
+              </label>
+              <label class="label_5">
+                <input
+                  type="checkbox"
+                  class="custom-checkbox3"
+                  name="rock"
+                  value="yes"
+                />
+                <span class="label_4">Pop</span>
+              </label>
+            </div>
+            <div class="test">
+              <label class="label_5">
+                <input
+                  type="checkbox"
+                  textIndent="5"
+                  class="custom-checkbox3"
+                  name="rock"
+                  value="yes"
+                />
+                <span class="label_4">Funk</span>
+              </label>
+              <label class="label_5">
+                <input
+                  type="checkbox"
+                  class="custom-checkbox3"
+                  name="rock"
+                  value="yes"
+                />
+                <span class="label_4">Latin</span>
+              </label>
+              <label class="label_5">
+                <input
+                  type="checkbox"
+                  class="custom-checkbox3"
+                  name="rock"
+                  value="yes"
+                />
+                <span class="label_4">Punk</span>
+              </label>
+              <label class="label_5">
+                <input
+                  type="checkbox"
+                  class="custom-checkbox3"
+                  name="rock"
+                  value="yes"
+                />
+                <span class="label_4">R&B</span>
+              </label>
+            </div>
+          </form>
+        </div>
+        <div class="input_9">
+          <span class="switch_title">Settings</span>
+          <form class="form_switch">
+            <label class="switch">
+              <input type="checkbox" checked name="" id="" />
+              <span class="slider"></span>
+              <span class="switch_text">Airplane Mode</span>
+            </label>
+            <label class="switch">
+              <input type="checkbox" name="" id="" />
+              <span class="slider"></span>
+              <span class="switch_text">Wi-Fi</span>
+            </label>
+            <label class="switch">
+              <input type="checkbox" checked name="" id="" />
+              <span class="slider"></span>
+              <span class="switch_text">Bluetooth</span>
+            </label>
+            <label class="switch">
+              <input type="checkbox" name="" id="" />
+              <span class="slider"></span>
+              <span class="switch_text">Hotspot</span>
+            </label>
+          </form>
+        </div>
+        <div class="input_10">
+          <form>
+            <span class="title_amount">Transfer Amount</span>
+            <div class="amount">
+              <input
+                class="input_amount"
+                type="number"
+                placeholder="1000"
+                min="1"
+              />
+              <select class="select_amount">
+                <option value="1">🏴󠁧󠁢󠁥󠁮󠁧󠁿 EUR</option>
+                <option value="2">🏁 USD</option>
+                <option value="3">🚩 CAD</option>
+                <option value="4">🏳️ GBP</option>
+                <option value="5">🏳️‍🌈 AUD</option>
+                <option value="6">🎌 BTC</option>
+              </select>
+            </div>
+          </form>
+        </div>
+        <div class="input_5">
+          <form>
+            <label>
+              <input
+                type="checkbox"
+                class="custom-checkbox2"
+                name="allow"
+                value="yes"
+              />
+              <span class="label_3">Send me updates</span>
+            </label>
+            <label>
+              <input
+                type="checkbox"
+                class="custom-checkbox2"
+                name="allow"
+                value="yes"
+              />
+              <span class="label_3">Agree to the terms</span>
+            </label>
+          </form>
+        </div>
+      </div>
+    </div>
+    <div class="wrapper_5">
+      <div class="input_8">
+        <form class="form_checkbox">
+          <span class="pick">Pick up to 4 interests</span>
+          <label class="label_checkbox">
+            <input type="checkbox" class="input_checkbox" />
+            <span>Food</span>
+          </label>
+          <label class="label_checkbox">
+            <input type="checkbox" class="input_checkbox" />
+            <span>Tech</span>
+          </label>
+          <label class="label_checkbox label_checkbox-other">
+            <input
+              type="checkbox"
+              class="input_checkbox input_checkbox-other"
+            />
+            <span>Automobile</span>
+          </label>
+          <label class="label_checkbox label_checkbox-other">
+            <input
+              type="checkbox"
+              class="input_checkbox input_checkbox-other"
+            />
+            <span>Creativity</span>
+          </label>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>
